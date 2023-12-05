@@ -1,0 +1,224 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.Main{
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(45deg,#77037B, #243b55);
+    /* background-color: #116D6E; */
+    /* background-color: white; */
+}
+.top{
+    position: fixed;
+    background-color: rgb(64, 54, 131);
+    height: 5%;
+    width: 100%;  
+}
+li{
+    list-style: none;
+}
+.top1{
+    position: fixed;
+    top: 5%;
+    background-color:darkslateblue;
+    height: 10%;
+    width: 100%;
+}
+.container
+    {
+    position: relative;
+    top: 15px;
+    height: 400px;
+    display: flex;
+    left: 1150px; 
+    }
+.list {
+    cursor: pointer;
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.856);
+    list-style: none;
+   
+  }
+  .fa-bed-pulse{
+    color: greenyellow;
+    font-size: 35px;
+    position: absolute;
+    left: 1180px;
+    top: 45px;
+    
+  }
+.fa-stethoscope{
+    color: cyan;
+    position: fixed;
+    top: 52px;
+    left: 540px;
+    font-size: 50px;
+}
+.hospital-name{
+    cursor: pointer;
+    position: fixed;
+    top: 45px;
+    left: 600px;
+    text-shadow: 1px 1px 10px cyan;
+    color: rgba(255, 255, 255, 0.87);
+    font-size: 50px;
+    font-family: 'Courier New', Courier, monospace;
+}
+.hospital-sub{
+    top: 78px;
+    cursor: pointer;
+    position: fixed;
+    left: 795px;
+    text-shadow: 1px 1px 10px cyan;
+    color: rgba(255, 255, 255, 0.87);
+    font-size: 50px;
+    font-family: 'Courier New', Courier, monospace;
+}
+.button{
+display: inline-block;
+position: relative;
+left: 330px;
+top: 10px;
+}
+button{
+    background-color: transparent;
+    font-size: 15px;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    text-transform: uppercase;
+    font-family:  'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+button:hover{
+    cursor: pointer;
+    /* background: linear-gradient(navy,black); */
+    background: linear-gradient(#141e30, #243b55);
+    color:white;
+    box-shadow: 0px 0px 10px cyan;
+}
+.fa-star{
+    position: absolute;
+    left: 420px;
+    top: 10px;
+    font-size: 40px;
+    color: rgba(241, 218, 7, 0.671);
+    text-shadow: 1px 1px 10px gold;
+}
+h4{
+    position: absolute;
+    left: 460px;
+    top: 30px;
+    color: rgba(255, 255, 255, 0.61);
+}
+.Hospitals{
+    cursor: pointer;
+    position: fixed;
+    top: 64px;
+    left: 820px;
+    color: rgba(255, 255, 255, 0.87);
+    font-size: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.Specialities{
+    cursor: pointer;
+    position: fixed;
+    top: 64px;
+    left: 920px;
+    color: rgba(255, 255, 255, 0.87);
+    font-size: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.Services{
+    cursor: pointer;
+    position: fixed;
+    top: 82px;
+    left: 1020px;
+    color: rgba(255, 255, 255, 0.87);
+    font-size: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.Appointment{
+    cursor: pointer;
+    position: fixed;
+    top: 82px;
+    left: 1120px;
+    color: rgba(255, 255, 255, 0.87);
+    font-size: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif; 
+}
+.Contact{
+    cursor: pointer;
+    position: fixed;
+    top: 82px;
+    left: 1290px;
+    color: rgba(255, 255, 255, 0.87);
+    font-size: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif; 
+}
+.Login{
+    cursor: pointer;
+    position: fixed;
+    top: 63px;
+    font-size: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 200;
+    color: rgba(255, 255, 255, 0.781);
+    left: 1410px;
+    width:8rem;
+    height: 2.5rem;
+    border-radius: 8px;
+    border-left-color:#27374D;
+    border-top-color: #27374D;
+    background-color: rgba(255, 0, 0, 0.336);
+}
+.top-3{
+    position: absolute;
+    z-index: 5;
+    top: 15%;
+    background-color: rgba(255, 255, 255, 0.548);
+    height: 7%;
+    width: 100%;
+}
+
+.left-nav{
+    position:fixed;
+    background-color: rgb(64, 54, 131);
+    top: 22%;
+    height: 100%;
+    width: 8%;
+}
+.fa-brands{
+    cursor: pointer;
+    top: 100px;
+    position: relative;
+    left: 50px;
+    color: rgba(255, 255, 255, 0.767);
+    font-size: 25px;
+}
+h6{
+    position: relative;
+    left: 40px;
+    top: 120px;
+}
+.fa-hospital{
+    position: absolute;
+    left: 1170px;
+    top: 40px;
+    font-size: 40px;
+    color: rgba(255, 255, 255, 0.842);
+}
+
+#form1{
+    width:310px;
+    padding:10px;
+    display:none;
+  }
+  .formhead{
+    background-color: #27A3D5;
+    color: #fff;
+    text-align:center;
+     width:310px;
+    padding:10px;
+  }

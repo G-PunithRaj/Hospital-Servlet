@@ -1,0 +1,317 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+::-webkit-scrollbar{
+    width: 5px;
+}
+::-webkit-scrollbar-track{
+    background: pink;
+}
+::-webkit-scrollbar-thumb{
+    background: yellow;
+}
+::-webkit-scrollbar-thumb:hover{
+    cursor: pointer;
+    background: green;
+}
+.date{
+    font-size: 15px;
+    position: relative;
+    right: 880px;
+    top: -13px;
+    color: rgba(255, 255, 255, 0.76);
+}
+.Main{
+    display: flex;
+    position: sticky;
+    height: 2000px;
+    width: 100%;
+    background: linear-gradient(to left,#77037B, #243b55);
+
+}
+.top{
+    position: fixed;
+    background-color: rgb(64, 54, 131);
+    height: 5%;
+    width: 100%;  
+    z-index: 1;
+}
+li{
+    list-style: none;
+}
+.top1{
+    position: fixed;
+    top: 5%;
+    z-index: 2;
+    background-color:darkslateblue;
+    height: 10%;
+    width: 100%;
+}
+.container
+    {
+    position: relative;
+    top: 15px;
+    height: 400px;
+    display: flex;
+    left: 1150px; 
+    }
+.list {
+    cursor: pointer;
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.664);
+    list-style: none;
+   
+  }
+.fa-stethoscope{
+    color: whitesmoke;
+    position: fixed;
+    top: 52px;
+    left: 220px;
+    font-size: 40px;
+}
+.hospital-name{
+    cursor: pointer;
+    position: fixed;
+    top: 44px;
+    left: 270px;
+    color: rgba(255, 255, 255, 0.87);
+    font-size: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.hospital-sub{
+    cursor: pointer;
+    position: fixed;
+    left: 270px;
+    color: rgba(255, 255, 255, 0.87);
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.fa-star{
+    position: absolute;
+    left: 420px;
+    top: 10px;
+    font-size: 40px;
+    color: rgba(241, 218, 7, 0.671);
+    text-shadow: 1px 1px 10px gold;
+}
+h4{
+    position: absolute;
+    left: 460px;
+    top: 30px;
+    color: rgba(255, 255, 255, 0.61);
+}
+.Hospitals{
+    cursor: pointer;
+    position: fixed;
+    top: 64px;
+    left: 820px;
+    color: rgba(255, 255, 255, 0.87);
+    font-size: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.dropbtn{
+    cursor: pointer;
+    position: fixed;
+    top: 64px;
+    left: 920px;
+    color: rgba(255, 255, 255, 0.87);
+    font-size: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    left: 890px;
+    top: 60px;
+    background-color:  rgb(64, 54, 131);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: rgb(255, 255, 255);
+    padding: 5px ;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {background:gray;}
+  
+  .dropdown:hover .dropdown-content {display: block;}
+  
+
+.Services{
+    cursor: pointer;
+    position: fixed;
+    top: 82px;
+    left: 1020px;
+    color: rgba(255, 255, 255, 0.87);
+    font-size: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.Appointment{
+    cursor: pointer;
+    position: fixed;
+    top: 82px;
+    left: 1120px;
+    color: rgba(255, 255, 255, 0.87);
+    font-size: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif; 
+}
+.Contact{
+    cursor: pointer;
+    position: fixed;
+    top: 82px;
+    left: 1290px;
+    color: rgba(255, 255, 255, 0.87);
+    font-size: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif; 
+}
+.Login{
+    cursor: pointer;
+    position: fixed;
+    top: 63px;
+    font-size: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 200;
+    color: rgba(255, 255, 255, 0.781);
+    left: 1410px;
+    width:8rem;
+    height: 2.5rem;
+    border-radius: 8px;
+    border-left-color:#27374D;
+    border-top-color: #27374D;
+    background-color: rgba(255, 0, 0, 0.336);
+}
+
+.left-nav{
+    position:fixed;
+    background-color: rgb(64, 54, 131);
+    top: 15%;
+    height: 100%;
+    width: 8%;
+}
+.fa-brands{
+    cursor: pointer;
+    position: relative;
+    left: 50px;
+    color: rgba(255, 255, 255, 0.767);
+    font-size: 25px;
+}
+h6{
+    position: relative;
+    left: 40px;
+}
+.head1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;    
+    font-size: 40px;
+    position: absolute;
+    top: 180px;
+    left: 200px;
+    color: white;
+    }
+    
+.pre1{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: white;
+    position: absolute;
+    top: 240px;
+    font-size: 15px;
+    left: 170px;
+}
+.pre2{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    position: absolute;
+    top: 340px;
+    font-size: 13px;
+    left: 270px; 
+}
+.mask{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    position: absolute;
+    top: 320px;
+    left: 200px;
+    height: 100px;
+}
+.mask2{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    position: absolute;
+    top: 320px;
+    left: 700px;
+    height: 100px; 
+}
+.mask3{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    position: absolute;
+    top: 470px;
+    left: 200px;
+    height: 100px; 
+}
+.mask4{
+    position: absolute;
+    top: 470px;
+    left: 700px;
+    height: 100px; 
+}
+.pre3{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    position: absolute;
+    top: 340px;
+    font-size: 13px;
+    left: 770px; 
+}
+.pre4{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    position: absolute;
+    top: 480px;
+    font-size: 13px;
+    left: 270px; 
+}
+.pre5{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    position: absolute;
+    top: 480px;
+    font-size: 13px;
+    left: 770px; 
+}
+.doctor-img{
+    position: relative;
+    left: 1100px;
+    top: 150px;
+}
+.flow-2{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    position: relative;
+    top: 740px;
+    right: 300px;
+    font-size: 30px;
+    color: rgba(255, 255, 255, 0.466);
+}
+#flow-3{
+    position: fixed;
+    top: 350px;
+    color: black;
+}
+p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    position: relative;
+    top: 820px;
+    right: 280px;
+    font-size: 17px;
+    color: rgb(146, 146, 146);
+}
+.flow-4{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    position: relative;
+    top: 850px;
+    right: 280px;
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.63);
+}

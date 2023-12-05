@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/icon-x" href="../webapp/Images/hospitals-icon.png">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup&#183;CMI-HOSPITAL</title>
+    <style>
+body{   
+        background: linear-gradient(to left,#77037B, #243b55);
+       } 
+       h1{
+        font-family: Arial, Helvetica, sans-serif;
+    color: rgb(230, 243, 243);
+    position: relative;
+    top: -40px;
+    left: 40px;
+}              
+.Main-div{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  padding: 40px;
+  transform: translate(-50%, -50%);
+  background: rgba(0,0,0,.5);
+  box-shadow: 0 15px 25px rgba(0,0,0,.6);
+  border-radius: 1px;
+}
+label{
+    color: white;
+}
+input{
+    height: 50px;
+    background-color: #141e30;
+    font-size: 20px;
+    border-top-right-radius:20px;
+    border-bottom-left-radius:20px;
+    border: none;
+    color: white;
+}
+.button{
+    position: absolute;
+    bottom: 40px;
+    right: 140px;
+}
+button{
+    cursor: pointer;
+    border-radius: 1px;
+    background-color: rgb(39, 65, 65);
+    display: flexbox;
+    align-items: center;
+    height: 2rem;
+    width: 6rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+button:hover{
+    background-color: rgb(68, 116, 116);
+    box-shadow: 1px 2px 100px cyan;
+}
+tr{
+    position: relative;
+    top: -60px;
+}
+.option{
+    color: #141e30;
+}
+    </style>
+</head>
+<body>
+<div class="Main-div">
+    <form action="doctorsignup" method="post">
+      <table>
+        <h1>ENTER YOUR DETAILS</h1>
+        <tr>
+            <tr>
+                <th><label for="name">NAME</label></th>
+                <th><input type="text" name="name" id="name" required></th>
+               </tr>
+           </div>
+               <tr>
+                   <th><label for="mobile">MOBILE</label></th>
+                   <th><input type="tel" name="mobile" id="mobile" pattern="{0-9}[10]" required></th>
+               </tr>
+               <tr>
+                   <th><label for="gmail">GMAIL</label></th>
+                   <th><input type="text" name="gmail" id="gmail" required></th>
+               </tr>
+               <tr>
+                   <th><label for="password">PASSWORD</label></th>
+                   <th><input type="password" name="password" id="password" required></th>
+               </tr>
+               <tr>
+                   <th><label for="dob">DOB</label></th>
+                   <th><input type="date" name="dob" id="dob" required></th>
+               </tr>
+               <tr>
+                   <th><label for="gender">GENDER</label></th>
+                   <th><input type="radio" name="gender" id="hello" value="Male" class="gender" required><span>Male</span>
+                   <input type="radio" name="gender" id="hello" class="gender" value="Female"><span>Female</span></th>
+               </tr>
+               <tr>
+                <th>
+                 <label for="qualification">QUALIFICATION</label>
+                </th>
+                <th><input type="text" name="qualification" id="qualification"></th>
+            </tr>
+            <tr><th><label for="specialization">SPECIALIZATION</label></th>
+                <th>
+                <select name="specialization" id="specialization">
+                    <option value="Internal medicine" name="specialization" class="option">Select Here</option>
+                    <option value="Pediatrics" name="specialization">Pediatrics</option>
+                    <option value="Urology" name="specialization">Urology</option>
+                    <option value="Pathology" name="specialization">Pathology</option>
+                    <option value="General surgery" name="specialization">General surgery</option>
+                    <option value="Otorhinolaryngology" name="specialization">Otorhinolaryngology</option>
+                    <option value="Gastroenterology" name="specialization">Gastroenterology</option>
+                    <option value="Psychiatry" name="specialization">Psychiatry</option>
+                    <option value="Anesthesiology" name="specialization">Anesthesiology</option>
+                    <option value="Radiology" name="specialization">Radiology</option>
+                    <option value="Rheumatology" name="specialization">Rheumatology</option>
+                </select></th>
+            <!-- <th><input type="text" name="specialization" id="specialization"></th> -->
+        </tr>
+        </tr>
+        <br><br>
+        <div class="button">
+        <button type="reset">CANCEL</button> <button type="submit">REGISTER</button>
+        </div>   
+      </table>        
+    </form>
+</div>
+</body>
+</html>

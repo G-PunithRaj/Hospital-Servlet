@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/icon-x" href="../webapp/Images/hospitals-icon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <title>Role&#183;CMI-HOSPITAL</title>
+    <style>
+            html {
+  height: 100%;
+}
+body {
+  position: absolute;
+  top: 240px;
+  right: 593px;
+  margin:0;
+  padding:0;
+  font-family: sans-serif;
+  background: linear-gradient(#141e30, #77037B);
+}
+.box{
+    position:absolute;
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0,0,0,.6);
+    border-radius: 1px;
+    position: relative;
+    height: 355px;
+    width: 405px;
+    background: rgba(0,0,0,.5);
+}
+h1{
+    position: relative;
+    top: 2px;
+    left: 15px;
+    color: aqua;
+    font-family: 'Times New Roman', Times, serif;
+}
+.input{
+    position: relative;
+    top: 30px;
+    left: 30px;
+ color: white ;
+ font-family: Verdana, Geneva, Tahoma, sans-serif;
+ font-size: 25px;  
+}
+
+button{
+    color: rgba(255, 255, 255, 0.705);
+    border-radius: 1px;
+    background-color: rgb(35, 66, 66);
+    position: relative;
+    top: 70px;
+    left: 30px;
+    display: flexbox;
+    align-items: center;
+    height: 1.5rem;
+    width: 5rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+button:hover{
+    background-color: rgb(55, 109, 109);
+    box-shadow: 1px 2px 100px cyan;
+}
+ .back{
+    height: 20px;
+    font-size: 12px;
+    position: absolute;
+    top: 150px;
+    left: 80px;
+}
+    </style>
+</head>
+<body>
+    <div class="box">
+    <form action="selectrole" method="post">
+        <h1>Select Your Role</h1>
+        <div class="input">
+        <input type="radio" name="role" id="" value="staff" required>&nbsp;<i class="fa-regular fa-user"></i>&nbsp;Staff <br>
+        <input type="radio" name="role" id="" value="doctor">&nbsp;<i class="fa-solid fa-user-doctor"></i>&nbsp;Doctor <br> <br>
+        </div>
+        
+        <button type="reset">Cancel</button>&nbsp;<button type="submit">Submit</button>
+    
+    </form>
+    <br> <br>
+    <div class="back"><a href="Login.html"><button class="back"><i class="fa-solid fa-arrow-left"></i>BACK</button></a></div>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="icon" type="image/icon-x" href="../webapp/Images/hospitals-icon.png"> 
+    <link rel="stylesheet" href="">
+    <title>Login&#183;CMI-HOSPITAL</title>
+
+<style>
+html {
+  height: 100%;
+}
+body {
+  margin:0;
+  padding:0;
+  font-family: sans-serif;
+  background: linear-gradient(#77037B, #141e30);
+}
+
+.login-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  padding: 40px;
+  transform: translate(-50%, -50%);
+  background: rgba(0,0,0,.5);
+  box-sizing: border-box;
+  box-shadow: 0 15px 25px rgba(0,0,0,.6);
+  border-radius: 10px;
+}
+
+.login-box h2 {
+  margin: 0 0 30px;
+  padding: 0;
+  color: #fff;
+  text-align: center;
+}
+
+.login-box .user-box {
+  position: relative;
+}
+
+.login-box .user-box input {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #fff;
+  margin-bottom: 30px;
+  border: none;
+  border-bottom: 1px solid #fff;
+  outline: none;
+  background: transparent;
+}
+.login-box .user-box label {
+  position: absolute;
+  top:0;
+  left: 0;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #fff;
+  pointer-events: none;
+  transition: .5s;
+}
+
+.login-box .user-box input:focus ~ label,
+.login-box .user-box input:valid ~ label {
+  top: -20px;
+  left: 0;
+  color: #03e9f4;
+  font-size: 12px;
+}
+
+.login-box form a {
+  position: relative;
+  display: inline-block;
+  padding: 5px 5px;
+  color: #03e9f4;
+  font-size: 12px;
+  text-decoration: none;
+  text-transform: uppercase;
+  overflow: hidden;
+  transition: .5s;
+  margin-top: 40px;
+  letter-spacing: 4px
+}
+/* .login-box a:hover {
+  background: #03e9f4;
+  color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 5px #03e9f4; 
+}  */
+.account button{
+    cursor: pointer;
+    text-decoration: underline;
+    position: fixed;
+    top: 560px;
+    color: white;
+    background-color: transparent;
+    left: 49%;
+    border:transparent;
+    font-size: 12px;
+}
+/* .account button:hover{
+  border-radius: 2px;
+  color: black;
+  background-color: rgba(245, 245, 245, 0.301);
+  box-shadow: 0px 0px 5px white;
+} */
+.Forgot-Password{
+  position: absolute;
+  top: -50px;
+  font-size: 10px;
+}
+.Forgot-Password:hover{
+  color: red;
+}
+.submit{
+  position: absolute;
+  top: 280px;
+  left: 50px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  border: transparent;
+  background: transparent;
+  color: aquamarine;
+}
+.submit:hover{
+  color: green;
+  border-radius: 5px;
+  box-shadow: 0 0 35px green;
+}
+.cancel{
+  position: absolute;
+  top: -2px;
+}
+.cancel:hover{
+  color: red;
+  border-radius: 5px;
+  box-shadow: 0 0 25px red;
+}
+.img{
+  position: absolute;
+  height: 50px;
+  width: 100%;
+  top: -50px;
+}
+#eyeicon{
+  cursor: pointer;
+  color: white;
+  position: relative;
+  left: 23%;
+  top: -110px;
+  font-size: 15px;
+}
+    </style>
+</head>
+<body>
+   
+  <!-- <i class="fa-thin fa-handshake"></i> -->
+    <div class="login-box">
+      <!-- <div class="img"><i class="fa-solid fa-bed-pulse"></i></div> -->
+
+        <h2>Welcome! Please Login</h2>
+        <form action="loginpage" method="post" autocomplete="off">
+          <div class="user-box">
+            <input type="text" name="id" required autofocus>
+            <label>Username / Id</label>
+          </div>
+          <div class="user-box">
+            <input id="Password" type="password" name="password" required  autofocus>
+            <label>Password</label>
+          </div>
+          <a href="Forgotpassword.html" class="Forgot-Password">Forgot Password?</a> <span><i class="fa-regular fa-eye-slash" id="eyeicon"></i></span>
+          <a href="Home.html" class="cancel">
+            Cancel
+          </a>
+          <button type="submit" class="submit">Submit</button>
+        </form>
+        
+      </div>
+      <span class="account"><a href="SelectRole.html"><button>Don't have an account? Sign up</button></a></span>
+      <script src="Login.js"></script>
+</body>
+</html>

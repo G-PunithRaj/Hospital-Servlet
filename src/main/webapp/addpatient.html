@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add-Patient</title>
+    <style>
+body{
+background: linear-gradient(to left,#141e30, #77037B);
+}
+html{
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  max-width:500px;
+  margin:auto;
+  color:#f7f2f2;
+}
+
+form{
+  height: 500px;
+  width: 400px;
+  margin-left: 50px;
+  margin-top: 160px;
+  padding:10px;
+  border:transparent;
+  background: rgba(0,0,0,.5);
+  box-shadow: 0 15px 25px rgba(0,0,0,.6);
+  border-radius:1px;
+}
+label{
+  position: relative;
+  top: -40px;
+}
+ input{
+  position: relative;
+  top: -40px;
+    height: 30px;
+    background-color: #212b3b;
+    font-size: 23px;
+    border: none;
+    color: white;
+}
+#formButton{
+  position: absolute;
+  top: 100px;
+  border-radius: 28px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #ffffff;
+  font-size: 20px;
+  background: transparent;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+ 
+}
+
+#formButton:hover{
+  background: #3cb0fd;
+  text-decoration: none;
+}
+
+b{
+  color:#3498db;
+}
+#submit{
+  position: relative;
+  top: 210px;
+  left: 260px;
+  border-radius: 28px;
+  font-family: monospace;
+  color: #ffffff;
+  font-size: 15px;
+  background:transparent;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+#cancel{
+  position: relative;
+  top: 210px;
+  left: -90px;
+  /* border: transparent; */
+  border-radius: 28px;
+  font-family: monospace;
+  color: #ffffff;
+  font-size: 15px;
+  background: transparent;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+
+#submit:hover{
+  background: green;
+  text-decoration: none;
+  box-shadow: 0px 0px 30px green;
+}
+#cancel:hover{
+  background: red;
+  text-decoration: none;
+  box-shadow: 0px 0px 20px red;
+}
+ .picture {
+  color: red;
+  font-size: 15px;
+  position: absolute;
+  top: 380px;
+  left: 750px;
+  background-color: transparent;
+  color: rgb(21, 19, 24);
+}
+.pic{
+  position: absolute;
+  top: 380px;
+  left: 630px;
+  font-weight: 1000%;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; 
+  /* font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
+  color: rgb(255, 255, 255);
+}
+    </style>
+   
+</head>
+<body>
+    <!-- <button type="button" id="formButton" onclick="toggle()">Patient Details</button> -->
+
+<form id="form1" action="addpatient" method="post"  enctype="multipart/form-data">
+  <h1 style="color: #3498db;">Enter Patient Details </h1>
+      <br><br>
+<table>
+  <tr>
+    <th><label for="name">NAME</label></th>
+    <th><input type="text" name="name" id="name"></th>
+  </tr>
+  <tr>
+    <th><label for="mobile">MOBILE</label></th>
+    <th><input type="tel" name="mobile" id="mobile" pattern="{0-9}[10]"></th>
+  </tr>
+  <tr>
+    <th><label for="dob">DOB</label></th>
+    <th><input type="date" name="dob" id="dob"></th>
+  </tr>
+  <label for="picture" class="pic">PICTURE</label>
+  <input type="file" name="picture" id="picture" class="picture" >
+</table>
+    
+  <button type="submit" id="submit">Submit</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <button type="reset" id="cancel">Cancel</button>
+  </form>
+  <script src="addpatient.js"></script>
+</body>
+</html>
